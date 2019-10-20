@@ -6,7 +6,6 @@
 |Column   |Type     |Options                       |
 |------   |----     |-------                       |
 |name     |string   |null: false, add_index: true  |
-|address  |integer  |null: false, unique: true     |
 
 ### Association
 - has_many :groups_users
@@ -26,10 +25,10 @@
 ## messages_テーブル
 |Column   |Type     |Options                       |
 |------   |----     |-------                       |
-|user_id  |integer  |null: false, foreign_key: true  |
-|group_id |integer  |null: false, foreign_key: true  |
-|body     |text     |null: false, foreign_key: true|
-|imgage   |string   |  |
+|user_id  |integer  |null: false                   |
+|group_id |integer  |null: false                   |
+|body     |text     |                              |
+|imgage   |string   |                              |
 
 ### Association
 - belongs_to :group
